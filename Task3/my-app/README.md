@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **Task 3**
 ##  
 # **Installation Instructions**

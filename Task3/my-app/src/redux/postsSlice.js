@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Thunk to fetch posts from the API
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
   const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
   return response.data;
@@ -17,7 +16,7 @@ const postsSlice = createSlice({
   name: 'posts',
   initialState: {
     posts: [],
-    status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+    status: 'idle', 
     error: null,
   },
   reducers: {},

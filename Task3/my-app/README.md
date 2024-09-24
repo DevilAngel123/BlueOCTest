@@ -41,6 +41,16 @@
         - Use `useSelector` to access `posts`, `loading`, and `error` from the Redux store to post the current state.
         - Use `useDispatch` to trigger the `fetchPosts` action when the component first renders.
         - Fetches data from the API and displays them.
-- ### Step 5 : Run
+- ### Step 5 : Modification
+    - Modify the `index.js` file:
+        ![alt text](<carbon (6).png>)
+        - Using `Provider` as a warp to warp the component `App` for Redux `store` and `root` render all the components.
+    - Modify the `App.js` file:
+        ![alt text](<carbon (5).png>)
+        - Display the header with "Post List".
+        - Includes the `PostForm` component to add new posts.
+        - Shows the `PostsList` component to display the list of posts.
+
+- ### Step 6 : Run
     - Use `npm star` to start the application.
     
